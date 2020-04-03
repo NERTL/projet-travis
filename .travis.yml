@@ -22,7 +22,7 @@ before_install:
 
 install:
   - docker-compose -f udacity-c3-deployment/docker/docker-compose-build.yaml build --parallel 
-  - docker-push moutty/reverseproxy
-  - docker-push moutty/udacity-restapi-user 
-  - docker-push moutty/udacity-restapi-feed
-  - docker-push moutty/udacity-frontend:local
+  - docker push moutty/reverseproxy
+  - docker push moutty/udacity-restapi-user 
+  - docker push moutty/udacity-restapi-feed
+  - docker push moutty/udacity-frontend:local
